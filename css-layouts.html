@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layouts</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Web Dev Notes</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="html.html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="semantic.html">Semantic HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">Tables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="css.html">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="css-layouts.html">CSS Layouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript.html">JavaScript</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h1 class="bg-primary-subtle text-center p-3">CSS Layouts</h1>
+
+      <p>
+        CSS layouts are used to arrange and position elements on a web page.
+        They help in creating clean, responsive, and well-structured designs.
+      </p>
+
+      <hr />
+
+      <!-- BOX MODEL -->
+      <h3>1. CSS Box Model</h3>
+      <p>
+        The CSS box model describes how elements are structured. Every element
+        consists of content, padding, border, and margin.
+      </p>
+
+      <pre>
+.box {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 15px;
+}
+</pre
+      >
+
+      <p></p>
+      <ul>
+        <li><strong>Content</strong> – actual text or element</li>
+        <li><strong>Padding</strong> – space inside the border</li>
+        <li><strong>Border</strong> – outline around the element</li>
+        <li><strong>Margin</strong> – space outside the border</li>
+      </ul>
+
+      <hr />
+
+      <!-- FLEXBOX -->
+      <h3>2. Flexbox Layout</h3>
+      <p>
+        Flexbox is a one-dimensional layout system used to align items in rows
+        or columns. It is very useful for navigation bars and responsive
+        components.
+      </p>
+
+      <pre>
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  padding: 20px;
+  background-color: lightblue;
+}
+</pre
+      >
+
+      <p>Common Flexbox properties:</p>
+      <ul>
+        <li><code>display: flex</code> – enables flexbox</li>
+        <li><code>justify-content</code> – horizontal alignment</li>
+        <li><code>align-items</code> – vertical alignment</li>
+        <li><code>flex-direction</code> – row or column</li>
+      </ul>
+
+      <hr />
+
+      <!-- GRID -->
+      <h3>3. CSS Grid Layout</h3>
+      <p>
+        CSS Grid is a two-dimensional layout system that allows creating layouts
+        using rows and columns. It is suitable for complex page structures.
+      </p>
+
+      <pre>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+</pre
+      >
+
+      <p>Common Grid properties:</p>
+      <ul>
+        <li><code>display: grid</code> – enables grid</li>
+        <li><code>grid-template-columns</code> – defines columns</li>
+        <li><code>grid-template-rows</code> – defines rows</li>
+        <li><code>gap</code> – space between items</li>
+      </ul>
+
+      <hr />
+
+      <h3>When to Use Which Layout</h3>
+      <ul>
+        <li><strong>Box Model</strong> – spacing and sizing elements</li>
+        <li><strong>Flexbox</strong> – simple layouts and alignment</li>
+        <li><strong>Grid</strong> – complex layouts with rows and columns</li>
+      </ul>
+    </div>
+
+    <footer class="footer">Made by <b>Simranjot Singh</b></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
